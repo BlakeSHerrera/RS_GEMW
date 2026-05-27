@@ -4,3 +4,4 @@
 __pycache__
 .dlt
 docker-compose.override.yaml
+*.sqlite
