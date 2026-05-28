@@ -1,0 +1,149 @@
+date,game,description
+2013-02-22,osrs,OSRS launched after player poll.
+2013-07-22,rs3,RS3 launched with HTML5 and new UI.
+2013-09-25,rs3,Bonds added to RS3 for gold-to-membership.
+2013-10-01,rs3,"EoC fully integrated, overhauling combat."
+2014-02-04,rs3,Treasure Hunter MTX replaces SoF.
+2014-07-14,rs3,Legacy Mode released for pre-EoC combat.
+2014-09-22,rs3,Prifddinas (Elf City) unlocked.
+2014-10-13,both,Ironman Mode added to RS3 and OSRS.
+2015-02-19,osrs,OSRS adds permanent free-to-play.
+2015-02-26,osrs,Grand Exchange added to OSRS.
+2015-07-13,rs3,Raids (Mazcab) launched in RS3.
+2015-09-16,rs3,DarkScape PvP game launched (closed 2016).
+2015-10-29,osrs,Deadman Mode PvP launched.
+2016-01-07,osrs,Zeah continent added to OSRS.
+2016-01-25,rs3,Invention Elite skill released.
+2016-04-18,rs3,NXT client launched.
+2016-07-00,both,Jagex acquired by Chinese investors.
+2017-01-05,osrs,Chambers of Xeric raid released.
+2017-06-01,osrs,Inferno solo PvM challenge added.
+2017-06-05,rs3,Menaphos expansion launched.
+2017-07-17,both,Mobile RS3/OSRS announced.
+2018-01-04,osrs,Dragon Slayer II released.
+2018-06-07,osrs,Theatre of Blood raid launched.
+2018-08-06,both,RuneScape Classic servers shut down.
+2018-09-20,osrs,Mod Jed fired over security breach.
+2018-10-30,osrs,OSRS launched on mobile.
+2019-01-07,rs3,Mining & Smithing rework released.
+2019-07-08,rs3,Anachronia island added.
+2019-07-25,osrs,Warding skill fails poll.
+2019-09-00,rs3,Duel Arena removed in RS3.
+2019-11-14,osrs,Twisted League seasonal mode launched.
+2020-03-30,rs3,Archaeology skill released.
+2020-04-28,both,Jagex sold to U.S. fund.
+2020-08-00,rs3,120 Herblore & Farming added.
+2020-10-14,rs3,RS3 launched on Steam.
+2021-01-11,both,Carlyle Group acquires Jagex.
+2021-03-04,rs3,Login lockout hits thousands of RS3 players.
+2021-06-17,rs3,RS3 released on mobile.
+2021-09-09,osrs,RuneLite HD unbanned after backlash.
+2021-10-06,osrs,Group Ironman mode launched.
+2022-01-04,rs3,"Duel Arena removed, replaced by Het's Oasis."
+2022-08-24,osrs,Tombs of Amascut (Raid 3) released.
+2022-09-26,rs3,Fresh Start Worlds launched (controversial).
+2022-11-15,both,CVC Capital to acquire Jagex.
+2023-04-04,osrs,Sailing chosen as new OSRS skill.
+2023-08-07,rs3,Necromancy skill released.
+2023-09-04,rs3,Hero Pass launched (major backlash).
+2023-09-08,rs3,Hero Pass nerfed after community outcry.
+2023-10-25,osrs,Sailing skill passes official poll.
+2024-02-09,both,Jagex ownership transferred to CVC.
+2024-06-00,both,Jagex Accounts rolled out to all players.
+2024-09-27,both,Membership prices raised globally.
+2025-01-16,both,Membership survey leak causes outrage.
+2025-01-25,both,Mod Pips resigns as Jagex CEO.
+2025-03-01,both,Mod Bellamy becomes new CEO.
+2025-06-01,both,Pride events canceled by new CEO.
+2025-06-25,both,Jagex reverses Pride decision after backlash.
+2013-06-04,rs3,Ascension Dungeon released.
+2013-08-20,rs3,Divination skill released.
+2014-04-28,rs3,Virtual level 120 capes released.
+2014-07-28,rs3,Araxxor boss released.
+2015-11-09,rs3,Elite Slayer launched.
+2016-03-29,rs3,God Wars Dungeon 2 released.
+2016-06-27,rs3,Telos and T92 2H weapons released.
+2016-08-22,rs3,Skill pets released.
+2017-01-30,rs3,Nex: Angel of Death and T92 magic weapons released.
+2017-03-27,rs3,Luck rework and new rare drop tiers introduced.
+2017-09-18,rs3,Invention Batch 2 released.
+2017-09-25,rs3,Lost Grove released.
+2018-05-29,rs3,Solak boss released.
+2018-06-25,rs3,Temple of Aminishi (ED1) released.
+2018-08-13,rs3,Dragonkin Laboratory (ED2) released.
+2019-02-25,rs3,The Shadow Reef (ED3) released.
+2019-10-05,rs3,Ranch Out of Time & 120 Farming/Herblore unlocked.
+2019-11-25,rs3,Yak Track launched and 120 skill cap increases added.
+2020-12-07,rs3,Raksha boss released.
+2021-10-25,rs3,Zuk boss and new cape upgrade released.
+2022-04-19,rs3,Membership and Shop price changes announced.
+2022-10-03,rs3,Master Max & Completionist capes introduced.
+2022-10-17,rs3,Wilderness Flash Events introduced.
+2023-01-09,rs3,GE Tax and Reduced Death Costs implemented.
+2023-03-13,rs3,Wilderness threat system removed.
+2023-06-05,rs3,Cursed Energies removed; Animate Dead and FSOA nerfed.
+2023-07-17,rs3,Soul Dye graphical update.
+2023-11-27,rs3,Black Partyhat released.
+2024-02-05,rs3,New Wilderness Special Flash Event released.
+2024-07-15,rs3,Um achievements released; Tome of Um renamed.
+2024-07-22,rs3,Sanctum of Rebirth and T95-T100 magic upgrades released.
+2024-08-12,rs3,Mining & Smithing expanded to level 110; T100 gear released.
+2024-08-21,rs3,Player Value Survey update hints at MTX reform/removal.
+2013-09-05,osrs,Nightmare zone
+2013-10-17,osrs,Gwd1
+2013-12-05,osrs,Rooftop agility courses
+2014-04-03,osrs,First boss pet (chaos elemental)
+2014-04-24,osrs,Motherlode mine
+2014-09-18,osrs,Bounty hunter
+2014-10-13,osrs,Ironman and ultimate Ironman
+2015-01-08,osrs,Zulrah
+2015-02-26,osrs,Grand exchange introduction
+2015-03-30,osrs,Osrs bond release
+2015-06-25,osrs,Platinum tokens
+2015-07-30,osrs,Music cape
+2015-08-27,osrs,Cerberus slayer boss
+2015-10-15,osrs,Max cape was added
+2015-10-29,osrs,First DMM
+2015-11-05,osrs,First skilling pets
+2015-12-03,osrs,Skillcape perks
+2016-01-07,osrs,Great Kourend
+2016-05-06,osrs,Monkey madness 2
+2016-05-06,osrs,Achievements diary cape
+2016-07-06,osrs,Third age pickaxe/master clue
+2016-08-04,osrs,Last man standing
+2016-11-10,osrs,Hardcore ironman
+2017-01-05,osrs,Chambers of xeric
+2017-06-01,osrs,Inferno and zuk
+2017-09-07,osrs,Fossil island
+2018-01-04,osrs,Dragon slayer 2
+2018-06-04,osrs,Membership price increase
+2018-06-07,osrs,Theater of blood
+2018-08-16,osrs,Duel Arena stake tax introduced
+2018-10-30,osrs,Old School runescape released for mobile
+2019-07-25,osrs,Prif release
+2019-09-26,osrs,Fremennik exiles quest
+2019-11-14,osrs,First league
+2020-02-06,osrs,The nightmare boss
+2020-06-04,osrs,Darkmeyer release
+2020-06-25,osrs,Deaths office
+2021-01-06,osrs,Soul wars
+2021-03-24,osrs,Tempoross
+2021-05-19,osrs,Clans
+2021-07-21,osrs,Combat achievements
+2021-10-06,osrs,Group ironman
+2021-12-09,osrs,Ge tax of 1%
+2022-02-23,osrs,Pvp loot keys
+2022-03-14,osrs,Runelite and jagex launcher
+2022-03-23,osrs,Guardians of the rift (rc minigame)
+2022-07-13,osrs,Emirs arena
+2022-08-24,osrs,Tombs of amascut
+2022-10-19,osrs,Fsw started
+2023-02-22,osrs,Osrs 10 year anniversary
+2023-04-18,osrs,Fsw ended
+2023-05-24,osrs,Bounty hunter store
+2023-06-28,osrs,Forestry/woodcutting updates
+2023-07-26,osrs,Desert treasure 2
+2024-03-20,osrs,Varlamore
+2024-03-20,osrs,Fortis Colosseum
+2024-06-25,osrs,Bond price increase
+2024-07-10,osrs,While guthix sleeps
