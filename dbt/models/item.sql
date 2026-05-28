@@ -1,11 +1,21 @@
 SELECT
-    name,
     ids.value AS id,
+    det.name,
+    det.description,
+    CASE
+        WHEN det.members = 'true' THEN 'members'
+        WHEN det.members = 'false' THEN 'free-to-play'
+        END AS members,
     vols.value AS volume,
     lims.value AS "limit",
     vals.value AS value,
     ha.value AS high_alch,
-    la.value AS low_alch
+    la.value AS low_alch,
+    det.icon,
+    det.icon_large,
+    det.type,
+    det.type_icon,
+
 FROM 
     raw.rs.geids ids
     LEFT JOIN raw.rs.gevolumes vols USING (name)
@@ -13,5 +23,6 @@ FROM
     LEFT JOIN raw.rs.gevalues vals USING (name)
     LEFT JOIN raw.rs.gehighalchs ha USING (name)
     LEFT JOIN raw.rs.gelowalchs la USING (name)
-    
-ORDER BY id
+    LEFT JOIN raw.rs.item_details det
+        ON ids.value = det.id
+ORDER BY type, id
