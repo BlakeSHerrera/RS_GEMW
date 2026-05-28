@@ -8,9 +8,10 @@ SELECT
     la.value AS low_alch
 FROM 
     raw.rs.geids ids
-    LEFT JOIN raw.raw.gevolumes vols USING (name)
-    LEFT JOIN raw.raw.gelimits lims USING (name)
-    LEFT JOIN raw.raw.gevalues vals USING (name)
-    LEFT JOIN raw.raw.gehighalchs ha USING (name)
-    LEFT JOIN raw.raw.gelowalchs la USING (name)
+    LEFT JOIN raw.rs.gevolumes vols USING (name)
+    LEFT JOIN raw.rs.gelimits lims USING (name)
+    LEFT JOIN raw.rs.gevalues vals USING (name)
+    LEFT JOIN raw.rs.gehighalchs ha USING (name)
+    LEFT JOIN raw.rs.gelowalchs la USING (name)
+    
 ORDER BY id
