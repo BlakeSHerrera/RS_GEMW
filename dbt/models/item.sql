@@ -7,7 +7,7 @@ SELECT
     ha.value AS high_alch,
     la.value AS low_alch
 FROM 
-    raw.raw.geids ids
+    raw.rs.geids ids
     LEFT JOIN raw.raw.gevolumes vols USING (name)
     LEFT JOIN raw.raw.gelimits lims USING (name)
     LEFT JOIN raw.raw.gevalues vals USING (name)

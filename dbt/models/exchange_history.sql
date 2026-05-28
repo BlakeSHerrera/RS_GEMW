@@ -3,5 +3,5 @@ SELECT
     price,
     EPOCH_MS(timestamp) AS timestamp,
     volume
-FROM raw.raw.exchange_history
+FROM raw.rs.exchange_history
 ORDER BY id, timestamp

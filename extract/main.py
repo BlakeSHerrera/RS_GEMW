@@ -110,8 +110,8 @@ def main():
     pipeline = dlt.pipeline(
         pipeline_name = 'rs_gemw',
         destination = dlt.destinations.duckdb(
-            credentials = 'duckdb:///data/RS_GEMW/raw.duckdb'),
-        dataset_name = 'raw',
+            credentials = 'duckdb://data/RS_GEMW/raw.duckdb'),
+        dataset_name = 'rs',
         progress = 'tqdm')
     
     load_info = pipeline.run(
