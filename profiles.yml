@@ -1,0 +1,19 @@
+rs_gemw:
+  target: dev
+  outputs:
+
+    dev:
+      type: duckdb
+      path: data/RS_GEMW/dev.duckdb
+      threads: 1
+      attach: &raw
+        - path: data/RS_GEMW/raw.duckdb
+          alias: raw
+          read_only: true 
+
+    prod:
+      type: duckdb
+      path: data/RS_GEMW/prod.duckdb
+      threads: 4
+      attach: *raw
+      

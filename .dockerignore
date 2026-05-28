@@ -5,3 +5,6 @@ __pycache__
 .dlt
 docker-compose.override.yaml
 *.sqlite
+target/
+dbt_packages/
+logs/

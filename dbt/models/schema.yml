@@ -1,0 +1,46 @@
+
+version: 1
+models:
+
+  - name: item
+    description: "Properties for all items available on the Grand Exchange."
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+      - name: name
+        description: "Item name"
+        data_tests:
+          - unique
+          - not_null
+      - name: volume
+        description: "The total number of this item that may be traded across the entire game economy in a day."
+        data_tests:
+          - not_null
+      - name: limit
+        quote: true  # limit is an SQL keyword
+        description: "The individual 4-hour buying limit for any one player."
+        data_tests:
+          - not_null
+      - name: value
+        description: "The in-game value modifier, used to determine alchemy values and the price to keep items on death."
+        data_tests:
+          - not_null
+      - name: high_alch
+        description: "The amount of gold generated from casting high alchemy on the item."
+      - name: low_alch
+        description: "The amount of gold gained from casting low alchemy on the item."
+
+  - name: exchange_history
+    description: "Daily aggregates for prices, trade volume, etc. per item."
+    columns:
+      - name: id
+        description: The item id.
+      - name: price
+        description: The average daily price of the item.
+      - name: timestamp
+        description: The date and time of the record.
+      - name: volume
+        description: The total volume traded, where available.
