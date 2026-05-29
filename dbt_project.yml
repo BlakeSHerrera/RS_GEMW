@@ -32,3 +32,8 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   rs_gemw:
     +materialized: table
+
+seeds:
+  rs_gemw:
+    +column_types:
+      timestamp: BIGINT

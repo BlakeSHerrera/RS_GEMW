@@ -105,8 +105,6 @@ def main():
             params = {'id': parent_item['value']})
         yield from itertools.chain.from_iterable(j.values())
 
-    csvs = [dlt.resource(pl.read_csv(f), name = f.stem) for f in pathlib.Path('extract').glob('*.csv')]
-
     pipeline = dlt.pipeline(
         pipeline_name = 'rs_gemw',
         destination = dlt.destinations.duckdb(
@@ -119,7 +117,6 @@ def main():
             source, 
             # exchange_history,
             item_details,
-            *csvs
         ],
         write_disposition = 'replace'),
     pprint(load_info)

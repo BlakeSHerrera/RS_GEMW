@@ -5,8 +5,8 @@ models:
   - name: item
     description: "Properties for all items available on the Grand Exchange."
     columns:
-      - name: id
-        description: "The primary key for this table"
+      - name: item_id
+        description: "The unique ID assigned by RuneScape to this item."
         data_tests:
           - unique
           - not_null
@@ -52,32 +52,59 @@ models:
         description: "URL to the item's category icon."
         data_tests:
           - not_null
+      - name: released
+        description: "Date when this item was releaed."
 
-  - name: exchange_history
-    description: "Daily aggregates for prices, trade volume, etc. per item."
+  - name: exchange_summary_daily
+    description: "Daily aggregates for prices, trade volume, etc. per item. This is the lowest grain data available."
     columns:
-      - name: id
-        description: The item id.
+      - name: item_id
+        description: "The item id."
         data_tests:
           - not_null
       - name: price
-        description: The average daily price of the item.
+        description: "The average daily price of the item."
         data_tests:
           - not_null
       - name: timestamp
-        description: The date and time of the record.
+        description: "The date and time of the record."
         data_tests:
           - not_null
       - name: volume
-        description: The total volume traded, where available.
+        description: "The total volume traded, where available."
         data_tests:
           - not_null
+      - name: spending
+        description: "The average price multiplied by the average volume, giving the total spent in the market for the day."
 
-  - name: active_players_weekly
+  - name: exchange_summary_monthly
+    description: "Weekly aggregates for prices, trade volume, etc. per item."
+    columns:
+      - name: item_id
+        description: "Id for the item."
+      - name: date
+        quote: true
+        description: "The date representing the first day of the month."
+      - name: days_in_month
+        description: "The number of days in the month."
+      - name: avg_price
+        description: "The average price, weighted by trade volume."
+      - name: volume
+        description: "The number of items traded in the month."
+      - name: spending
+        description: "The total amount of gold traded in the month."
+      - name: avg_active_players
+        description: "The estimated number of players online at any given point in time."
+    
+  - name: active_player_snapshot_weekly
     description: "Count of active players each week."
     columns:
-      - name: date
-        description: "The first day of the given week."
+      - name: period_start
+        description: "The start of the time period. Note that a week is an approximation - it does not start on the same day each week."
+        data_tests:
+          - not_null
+      - name: period_end
+        description: "The end of the time period."
         data_tests:
           - not_null
       - name: rs3_count

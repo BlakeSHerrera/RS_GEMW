@@ -1,0 +1,35 @@
+
+version: 1
+seeds:
+
+  - name: seed_event
+    description: "Significant events in the game's history."
+    columns:
+      - name: date
+        description: "The date of the event."
+      - name: game
+        description: "Whether the event is for RS3, OSRS, or both."
+      - name: description
+        description: "A longer description of the event."
+    config:
+      column_types:
+        date: DATE
+        game: TEXT
+        description: TEXT
+  
+  - name: seed_osrs_active_players
+    description: "Counts of number of players online on OSRS, snapshotted approximately weekly."
+    columns: &cols_counts
+      - name: timestamp
+        description: "A timestamp integer representing the number of miliseconds since the UNIX epoch."
+      - name: count
+        description: "The number of players that were online."
+    config: &cfg_counts
+      column_types:
+        timestamp: BIGINT
+        count: INT
+  
+  - name: seed_rs3_active_players
+    description: "Counts of number of players online on RS3, snapshotted approximately weekly."
+    columns: *cols_counts
+    config: *cfg_counts
