@@ -1,5 +1,16 @@
+WITH release_dates AS (
+    SELECT
+        ids.value AS item_id,
+        ids.name AS name,
+        FIRST(esd.timestamp) AS released
+    FROM raw.rs.geids ids
+    LEFT JOIN {{ ref('exchange_summary_daily') }} esd
+        ON ids.value = esd.item_id
+    GROUP BY ids.value, ids.name
+)
+
 SELECT
-    ids.value AS id,
+    rd.item_id,
     det.name,
     det.description,
     CASE
@@ -15,14 +26,13 @@ SELECT
     det.icon_large,
     det.type,
     det.type_icon,
-
+    rd.released
 FROM 
-    raw.rs.geids ids
+    release_dates rd
     LEFT JOIN raw.rs.gevolumes vols USING (name)
     LEFT JOIN raw.rs.gelimits lims USING (name)
     LEFT JOIN raw.rs.gevalues vals USING (name)
     LEFT JOIN raw.rs.gehighalchs ha USING (name)
     LEFT JOIN raw.rs.gelowalchs la USING (name)
-    LEFT JOIN raw.rs.item_details det
-        ON ids.value = det.id
-ORDER BY type, id
+    INNER JOIN raw.rs.item_details det
+        ON rd.item_id = det.id
