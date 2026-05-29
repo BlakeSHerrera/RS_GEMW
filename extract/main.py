@@ -115,7 +115,7 @@ def main():
     load_info = pipeline.run(
         [
             source, 
-            # exchange_history,
+            exchange_history,
             item_details,
         ],
         write_disposition = 'replace'),
