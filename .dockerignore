@@ -8,3 +8,4 @@ docker-compose.override.yaml
 target/
 dbt_packages/
 logs/
+.pytest_cache
